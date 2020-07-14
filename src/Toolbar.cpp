@@ -67,8 +67,8 @@ static ToolbarButtonInfo gToolbarButtons[] = {
     {-1, 0, nullptr, 0},
     {4, CmdZoomFitWidthAndContinous, _TRN("Fit Width and Show Pages Continuously"), 0},
     {5, CmdZoomFitPageAndSinglePage, _TRN("Fit a Single Page"), 0},
-    {6, CmdZoomOut, _TRN("Zoom Out"), 0},
-    {7, CmdZoomIn, _TRN("Zoom In"), 0},
+    {6, CmdGoToNavBack, _TRN("Go Back"), 0},
+    {7, CmdGoToNavForward, _TRN("Go Forward"), 0},
     {-1, CmdFindFirst, nullptr, 0},
     {8, CmdFindPrev, _TRN("Find Previous"), 0},
     {9, CmdFindNext, _TRN("Find Next"), 0},
@@ -346,7 +346,7 @@ void UpdateToolbarFindText(WindowInfo* win) {
     Rect findWndRect = WindowRect(win->hwndFindBg);
 
     RECT r{};
-    TbGetRect(win->hwndToolbar, CmdZoomIn, &r);
+    TbGetRect(win->hwndToolbar, CmdGoToNavForward, &r);
     int currX = r.right + DpiScale(win->hwndToolbar, 10);
     int currY = (r.bottom - findWndRect.dy) / 2;
 

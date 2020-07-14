@@ -34,20 +34,20 @@ static const char* gIconPrint =
 
 // https://github.com/tabler/tabler-icons/blob/master/icons/arrow-left.svg
 static const char* gIconPagePrev =
-    R"(<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <rect x="0" y="0" width="24" height="24" stroke="none"></rect>
-  <line x1="5" y1="12" x2="19" y2="12" />
-  <line x1="5" y1="12" x2="11" y2="18" />
-  <line x1="5" y1="12" x2="11" y2="6" />
+    R"(<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-up" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="12" y1="5" x2="12" y2="19" />
+  <line x1="18" y1="11" x2="12" y2="5" />
+  <line x1="6" y1="11" x2="12" y2="5" />
 </svg>)";
 
 // https://github.com/tabler/tabler-icons/blob/master/icons/arrow-right.svg
 static const char* gIconPageNext =
-    R"(<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <rect x="0" y="0" width="24" height="24" stroke="none"></rect>
-  <line x1="5" y1="12" x2="19" y2="12" />
-  <line x1="13" y1="18" x2="19" y2="12" />
-  <line x1="13" y1="6" x2="19" y2="12" />
+    R"(<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-down" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="12" y1="5" x2="12" y2="19" />
+  <line x1="18" y1="13" x2="12" y2="19" />
+  <line x1="6" y1="13" x2="12" y2="19" />
 </svg>)";
 
 // https://github.com/tabler/tabler-icons/blob/master/icons/layout-rows.svg
@@ -90,22 +90,21 @@ static const char* gIconMatchCase =
 </svg>)";
 
 // https://github.com/tabler/tabler-icons/blob/master/icons/zoom-in.svg
-static const char* gIconZoomIn =
-    R"(<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-zoom-in" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+static const char* gIconGoForward =
+    R"(<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <rect x="0" y="0" width="24" height="24" stroke="none"></rect>
-  <circle cx="10" cy="10" r="7" />
-  <line x1="7" y1="10" x2="13" y2="10" />
-  <line x1="10" y1="7" x2="10" y2="13" />
-  <line x1="21" y1="21" x2="15" y2="15" />
+  <line x1="5" y1="12" x2="19" y2="12" />
+  <line x1="13" y1="18" x2="19" y2="12" />
+  <line x1="13" y1="6" x2="19" y2="12" />
 </svg>)";
 
 // https://github.com/tabler/tabler-icons/blob/master/icons/zoom-out.svg
-static const char* gIconZoomOut =
-    R"(<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-zoom-out" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <rect x="0" y="0" width="24" height="24" stroke="none"></rect>
-  <circle cx="10" cy="10" r="7" />
-  <line x1="7" y1="10" x2="13" y2="10" />
-  <line x1="21" y1="21" x2="15" y2="15" />
+static const char* gIconGoBack =
+    R"(<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="12" x2="19" y2="12" />
+  <line x1="5" y1="12" x2="11" y2="18" />
+  <line x1="5" y1="12" x2="11" y2="6" />
 </svg>)";
 
 // https://github.com/tabler/tabler-icons/blob/master/icons/floppy-disk.svg
@@ -125,8 +124,8 @@ static const char* gAllIcons[] = {
     gIconPageNext,
     gIconLayoutContinous,
     gIconLayoutSinglePage,
-    gIconZoomOut,
-    gIconZoomIn,
+    gIconGoBack,
+    gIconGoForward,
     gIconSearchPrev,
     gIconSearchNext,
     gIconMatchCase,
